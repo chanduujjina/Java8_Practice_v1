@@ -46,6 +46,18 @@ it will accept one object and return boolean value
 BiPredicate:
 it will accept two object and return boolean value
 
+Stream Api in collection?
+
+1.how to create a stream?
+2.Basics rules of stream api?
+3.What ate intermediate operators and terminal operators in stream?
+
+Queries on Employee mock data?
+
+Basic rule of Stream usage
+
+1.There should be one or more intermediate operators and should be only one terminal operator
+
 
 
 
