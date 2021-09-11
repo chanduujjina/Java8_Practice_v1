@@ -58,6 +58,34 @@ Basic rule of Stream usage
 
 1.There should be one or more intermediate operators and should be only one terminal operator
 
+Aggregators functions(sum,avg,max,min,count)
+
+
+ select sum(salary) from employee;
+ select avg(salary) from employee;
+ select max(salary) from employee;
+ select min(salary) from employee;
+ 
+ select count(column) from employee;
+ 
+ sorting queries in sql
+ 
+ select * from employee order by salary asc;
+ 
+  select * from employee order by salary desc;
+  
+  
+  distinct list of names
+  
+  select distinct empName from employee
+  
+  group by function
+  
+   select count(id) as employeeCount ,deptName from employee group by deptName;
+  
+  
+ 
+
 
 
 
