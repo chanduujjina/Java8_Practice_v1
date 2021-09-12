@@ -1,6 +1,7 @@
 package com.demo.java8.StreamHandler;
 
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -107,6 +108,14 @@ public class EmployeeStreamHandler1 {
 		
 		Employee secondMaxSalaryEmployee = employeeList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst().get();
 		System.out.println(secondMaxSalaryEmployee);
+		
+		 List<Employee> itemployeeList = employeeList.stream().filter(emp->emp.getDeptName().equalsIgnoreCase("IT")).collect(Collectors.toList());
+		 System.out.println(itemployeeList);
+		 
+		 //get list of citiies
+		 List<String> cityList = employeeList.stream().map(emp->emp.getAddress().getCity()).collect(Collectors.toList());
+		 System.out.println(cityList);
 	}
 
 }
+
